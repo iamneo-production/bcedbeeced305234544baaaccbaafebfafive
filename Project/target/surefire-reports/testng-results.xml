@@ -1,57 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-19T15:41:26 UTC" name="Surefire suite" finished-at="2023-09-19T15:41:26 UTC" duration-ms="59">
+  <suite started-at="2023-09-19T15:47:02 UTC" name="Surefire suite" finished-at="2023-09-19T15:47:24 UTC" duration-ms="22493">
     <groups>
     </groups>
-    <test started-at="2023-09-19T15:41:26 UTC" name="Surefire test" finished-at="2023-09-19T15:41:26 UTC" duration-ms="59">
+    <test started-at="2023-09-19T15:47:02 UTC" name="Surefire test" finished-at="2023-09-19T15:47:24 UTC" duration-ms="22493">
+      <class name="runner.Testcase1">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:runner.Testcase1@75437611]" started-at="2023-09-19T15:47:16 UTC" name="beforeMethod" finished-at="2023-09-19T15:47:18 UTC" duration-ms="2462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_001()[pri:1, instance:runner.Testcase1@75437611]" started-at="2023-09-19T15:47:18 UTC" name="TC_001" finished-at="2023-09-19T15:47:24 UTC" duration-ms="5849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:runner.Testcase1@75437611]" started-at="2023-09-19T15:47:24 UTC" name="afterMethod" finished-at="2023-09-19T15:47:24 UTC" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- runner.Testcase1 -->
       <class name="runner.Testcase2">
-        <test-method signature="TC_002()[pri:2, instance:runner.Testcase2@6c1a5b54]" started-at="2023-09-19T15:41:26 UTC" name="TC_002" finished-at="2023-09-19T15:41:26 UTC" duration-ms="10" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at utils.Screenshot.getScreenShot(Screenshot.java:26)
-at runner.Testcase2.TC_002(Testcase2.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:runner.Testcase2@1e6a3214]" started-at="2023-09-19T15:47:02 UTC" name="beforeMethod" finished-at="2023-09-19T15:47:05 UTC" duration-ms="3267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_002()[pri:2, instance:runner.Testcase2@1e6a3214]" started-at="2023-09-19T15:47:05 UTC" name="TC_002" finished-at="2023-09-19T15:47:15 UTC" duration-ms="10358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_002 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:runner.Testcase2@1e6a3214]" started-at="2023-09-19T15:47:15 UTC" name="afterMethod" finished-at="2023-09-19T15:47:16 UTC" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- runner.Testcase2 -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
