@@ -9,6 +9,8 @@ public class locators {
     public static By depositLink = By.linkText("Deposit");
     public static By accType = By.id("selectedAccount");
     public static By amount = By.id("amount");
+
+    public static String firstElement = "//div[@id='Razor']";
     public static String submitAcc = "//button[text()=' Submit']";
     // public static By Withdrawlink = By.linkText("Withdraw");
     public static By getWithdrawLinkLocator() {
