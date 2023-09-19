@@ -40,7 +40,7 @@ import utils.Screenshot;
 import uistore.locators;
 import utils.excelReadFile;
 import utils.Reporter;
-public class homepage  {
+public class Deposit  {
 
     private Map<String, String> testData; 
 
@@ -59,64 +59,21 @@ public class homepage  {
         }
     }
 
-    public void Valid_Login_TC(WebDriver driver)throws IOException {
-    
-            Map<String, String> testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
-            String username = testData.get("username");
-            String password = testData.get("password");
-
-            driver.findElement(locators.username).sendKeys(username);
-            driver.findElement(locators.password).sendKeys(password);
-            driver.findElement(locators.submit).click();
-           
-
-
-    }
-    // public void Register(WebDriver driver)throws IOException {
+public void Deposit(WebDriver driver)throws IOException {
             
-    //         Map<String, String> testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
-    //         String username = testData.get("username");
-    //         String password = testData.get("password");
-    //         String depositAmount = testData.get("depositAmount");
-
-    //         driver.findElement(locators.username).sendKeys(username);
-    //         driver.findElement(locators.password).sendKeys(password);
-    //         driver.findElement(locators.submit).click();
-    //         Duration timeout = Duration.ofSeconds(10);
-    //         WebDriverWait wait = new WebDriverWait(driver,timeout);
-    //         WebElement depositLink = wait.until(ExpectedConditions.elementToBeClickable(locators.depositLink));
-    //         depositLink.click();
-    //         Select accType=new Select(driver.findElement(locators.accType));
-    //         log.info("Account Type has been selected");
-    //         accType.selectByVisibleText("Individual Checking (Standard Checking)");
-    //         driver.findElement(locators.amount).sendKeys(depositAmount);
-    //         log.info("Amount has been sent");
-    //         driver.findElement(By.xpath(locators.submitAcc)).click();
-
-        
-    // }
-    public void WithdrawTest(WebDriver driver)throws IOException {
             Map<String, String> testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
-            String username = testData.get("username");
-            String password = testData.get("password");
-            String withdrawAmount = testData.get("withdrawAmount");
-
-            driver.findElement(locators.username).sendKeys(username);
-            driver.findElement(locators.password).sendKeys(password);
-            driver.findElement(locators.submit).click();
+            String depositAmount = testData.get("depositAmount");
             Duration timeout = Duration.ofSeconds(10);
             WebDriverWait wait = new WebDriverWait(driver,timeout);
-            driver.findElement(locators.getWithdrawLinkLocator()).click();
+            WebElement depositLink = wait.until(ExpectedConditions.elementToBeClickable(locators.depositLink));
+            depositLink.click();
             Select accType=new Select(driver.findElement(locators.accType));
             log.info("Account Type has been selected");
             accType.selectByVisibleText("Individual Checking (Standard Checking)");
-            driver.findElement(locators.amount).sendKeys(withdrawAmount);
+            driver.findElement(locators.amount).sendKeys(depositAmount);
             log.info("Amount has been sent");
             driver.findElement(By.xpath(locators.submitAcc)).click();
 
         
     }
 }
-
-
-
