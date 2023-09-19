@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-19T15:38:29 UTC" name="Surefire suite" finished-at="2023-09-19T15:38:45 UTC" duration-ms="15368">
+  <suite started-at="2023-09-19T15:41:26 UTC" name="Surefire suite" finished-at="2023-09-19T15:41:26 UTC" duration-ms="59">
     <groups>
     </groups>
-    <test started-at="2023-09-19T15:38:29 UTC" name="Surefire test" finished-at="2023-09-19T15:38:45 UTC" duration-ms="15368">
-      <class name="runner.Testcase1">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:runner.Testcase1@d86a6f]" started-at="2023-09-19T15:38:29 UTC" name="beforeMethod" finished-at="2023-09-19T15:38:34 UTC" duration-ms="4416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_003()[pri:3, instance:runner.Testcase1@d86a6f]" started-at="2023-09-19T15:38:34 UTC" name="TC_003" finished-at="2023-09-19T15:38:44 UTC" duration-ms="10498" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_003 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:runner.Testcase1@d86a6f]" started-at="2023-09-19T15:38:44 UTC" name="afterMethod" finished-at="2023-09-19T15:38:45 UTC" duration-ms="404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- runner.Testcase1 -->
+    <test started-at="2023-09-19T15:41:26 UTC" name="Surefire test" finished-at="2023-09-19T15:41:26 UTC" duration-ms="59">
       <class name="runner.Testcase2">
-        <test-method signature="TC_002()[pri:2, instance:runner.Testcase2@1c7696c6]" started-at="2023-09-19T15:38:29 UTC" name="TC_002" finished-at="2023-09-19T15:38:29 UTC" duration-ms="10" status="FAIL">
+        <test-method signature="TC_002()[pri:2, instance:runner.Testcase2@6c1a5b54]" started-at="2023-09-19T15:41:26 UTC" name="TC_002" finished-at="2023-09-19T15:41:26 UTC" duration-ms="10" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException

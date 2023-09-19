@@ -29,21 +29,21 @@ public class Testcase2 extends Base {
     Withdraw withdraw = new Withdraw();
 
 
- @Test(priority = 2)
-    public void TC_002() throws IOException {
-        try {
-            ExtentTest test = reporter.createTest("Register Test", "Execution for Register Function");
-            driver.get(prop.getProperty("url"));
-            Homepage.Valid_Login_TC(driver);
-            deposit.Deposit_Amount(driver);
-            test.log(Status.PASS, "Register Test");
-        } 
-        catch (Exception ex) {
-            ex.printStackTrace();
-            Screenshot.getScreenShot(driver, "Register_test");
-            ExtentTest test = reporter.createTest("Register Test");
-            String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-            test.log(Status.FAIL, "Unable to Perform Register Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+//  @Test(priority = 2)
+//     public void TC_002() throws IOException {
+//         try {
+//             ExtentTest test = reporter.createTest("Register Test", "Execution for Register Function");
+//             driver.get(prop.getProperty("url"));
+//             Homepage.Valid_Login_TC(driver);
+//             deposit.Deposit_Amount(driver);
+//             test.log(Status.PASS, "Register Test");
+//         } 
+//         catch (Exception ex) {
+//             ex.printStackTrace();
+//             Screenshot.getScreenShot(driver, "Register_test");
+//             ExtentTest test = reporter.createTest("Register Test");
+//             String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
+//             test.log(Status.FAIL, "Unable to Perform Register Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
            
-        }
-    }}
+//         }
+//     }}

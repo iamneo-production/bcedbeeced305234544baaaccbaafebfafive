@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.062 s <<< FAILURE! - in TestSuite
-TC_002(runner.Testcase2)  Time elapsed: 0.017 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.733 s <<< FAILURE! - in TestSuite
+TC_002(runner.Testcase2)  Time elapsed: 0.016 s  <<< FAILURE!
 java.lang.NullPointerException
 	at runner.Testcase2.TC_002(Testcase2.java:43)
 
