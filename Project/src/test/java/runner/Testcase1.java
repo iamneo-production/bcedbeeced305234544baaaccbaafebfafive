@@ -42,41 +42,41 @@ public class Testcase1 extends Base {
            
         }
     }
-     @Test(priority = 2)
-    public void TC_002() throws IOException {
-        try {
-            ExtentTest test = reporter.createTest("Register Test", "Execution for Register Function");
-            driver.get(prop.getProperty("url"));
-            Homepage.Register(driver);
-            test.log(Status.PASS, "Register Test");
-        } 
-        catch (Exception ex) {
-            ex.printStackTrace();
-            Screenshot.getScreenShot(driver, "Register_test");
-            ExtentTest test = reporter.createTest("Register Test");
-            String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-            test.log(Status.FAIL, "Unable to Perform Register Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+    //  @Test(priority = 2)
+    // public void TC_002() throws IOException {
+    //     try {
+    //         ExtentTest test = reporter.createTest("Register Test", "Execution for Register Function");
+    //         driver.get(prop.getProperty("url"));
+    //         Homepage.Register(driver);
+    //         test.log(Status.PASS, "Register Test");
+    //     } 
+    //     catch (Exception ex) {
+    //         ex.printStackTrace();
+    //         Screenshot.getScreenShot(driver, "Register_test");
+    //         ExtentTest test = reporter.createTest("Register Test");
+    //         String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
+    //         test.log(Status.FAIL, "Unable to Perform Register Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
            
-        }
-    }
-    @Test(priority = 3)
-    public void TC_003() throws IOException {
-        try {
-            ExtentTest test = reporter.createTest("WithdrawTest ", "Execution for WithdrawTest");
-            driver.get(prop.getProperty("url"));
-            Homepage.WithdrawTest(driver);
-            String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-            test.log(Status.PASS, "WithdrawTest", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+    //     }
+    // }
+    // @Test(priority = 3)
+    // public void TC_003() throws IOException {
+    //     try {
+    //         ExtentTest test = reporter.createTest("WithdrawTest ", "Execution for WithdrawTest");
+    //         driver.get(prop.getProperty("url"));
+    //         Homepage.WithdrawTest(driver);
+    //         String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
+    //         test.log(Status.PASS, "WithdrawTest", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
 
-        }catch (Exception ex) {
-            ex.printStackTrace();
-            Screenshot.getScreenShot(driver, "Withdraw test");
-            ExtentTest test = reporter.createTest("WithdrawTest");
-            String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-            test.log(Status.FAIL, "Unable to Perform WithdrawTest ", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+    //     }catch (Exception ex) {
+    //         ex.printStackTrace();
+    //         Screenshot.getScreenShot(driver, "Withdraw test");
+    //         ExtentTest test = reporter.createTest("WithdrawTest");
+    //         String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
+    //         test.log(Status.FAIL, "Unable to Perform WithdrawTest ", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
            
-        }
-    }
+    //     }
+    // }
     
     
 

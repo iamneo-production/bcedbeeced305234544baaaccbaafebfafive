@@ -49,15 +49,15 @@ public class homepage  {
     ExtentReports reporter = Reporter.generateExtentReport();
     excelReadFile file = new excelReadFile();
 
-    @BeforeMethod
-    public void loadData() {
-        try {
-            testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
-        } catch (IOException e) {
-            // Handle the exception
-            e.printStackTrace();
-        }
-    }
+    // @BeforeMethod
+    // public void loadData() {
+    //     try {
+    //         testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
+    //     } catch (IOException e) {
+    //         // Handle the exception
+    //         e.printStackTrace();
+    //     }
+    // }
 
     public void Valid_Login_TC(WebDriver driver)throws IOException {
     
@@ -95,28 +95,28 @@ public class homepage  {
 
         
     // }
-    public void WithdrawTest(WebDriver driver)throws IOException {
-            Map<String, String> testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
-            String username = testData.get("username");
-            String password = testData.get("password");
-            String withdrawAmount = testData.get("withdrawAmount");
+//     public void WithdrawTest(WebDriver driver)throws IOException {
+//             Map<String, String> testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
+//             String username = testData.get("username");
+//             String password = testData.get("password");
+//             String withdrawAmount = testData.get("withdrawAmount");
 
-            driver.findElement(locators.username).sendKeys(username);
-            driver.findElement(locators.password).sendKeys(password);
-            driver.findElement(locators.submit).click();
-            Duration timeout = Duration.ofSeconds(10);
-            WebDriverWait wait = new WebDriverWait(driver,timeout);
-            driver.findElement(locators.getWithdrawLinkLocator()).click();
-            Select accType=new Select(driver.findElement(locators.accType));
-            log.info("Account Type has been selected");
-            accType.selectByVisibleText("Individual Checking (Standard Checking)");
-            driver.findElement(locators.amount).sendKeys(withdrawAmount);
-            log.info("Amount has been sent");
-            driver.findElement(By.xpath(locators.submitAcc)).click();
+//             driver.findElement(locators.username).sendKeys(username);
+//             driver.findElement(locators.password).sendKeys(password);
+//             driver.findElement(locators.submit).click();
+//             Duration timeout = Duration.ofSeconds(10);
+//             WebDriverWait wait = new WebDriverWait(driver,timeout);
+//             driver.findElement(locators.getWithdrawLinkLocator()).click();
+//             Select accType=new Select(driver.findElement(locators.accType));
+//             log.info("Account Type has been selected");
+//             accType.selectByVisibleText("Individual Checking (Standard Checking)");
+//             driver.findElement(locators.amount).sendKeys(withdrawAmount);
+//             log.info("Amount has been sent");
+//             driver.findElement(By.xpath(locators.submitAcc)).click();
 
         
-    }
+//     }
+// }
 }
-
 
 

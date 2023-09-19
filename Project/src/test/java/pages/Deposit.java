@@ -59,7 +59,7 @@ public class Deposit  {
         }
     }
 
-public void Deposit(WebDriver driver)throws IOException {
+public void Deposit_Amount(WebDriver driver)throws IOException {
             
             Map<String, String> testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
             String depositAmount = testData.get("depositAmount");
