@@ -1,0 +1,10 @@
+Sep 19, 2023 2:21:09 PM utils.Base openBrowser
+INFO: Browser Launched
+Sep 19, 2023 2:21:10 PM utils.Base openBrowser
+INFO: Browser Loaded the URL
+Sep 19, 2023 2:21:18 PM pages.Deposit Deposit_Amount
+INFO: Account Type has been selected
+Sep 19, 2023 2:21:19 PM pages.Deposit Deposit_Amount
+INFO: Amount has been sent
+Sep 19, 2023 2:21:21 PM runner.Testcase1 afterMethod
+INFO: Browser closed
