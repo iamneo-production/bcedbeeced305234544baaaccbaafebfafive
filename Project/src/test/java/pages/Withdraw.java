@@ -59,6 +59,9 @@ public class Withdraw  {
         }
     }
 
+public void setImplicitWait(WebDriver driver, int seconds) {
+    driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
+}
 
 
   public void WithdrawTest(WebDriver driver)throws IOException {
@@ -71,6 +74,7 @@ public class Withdraw  {
             Select accType=new Select(driver.findElement(locators.accType));
             log.info("Account Type has been selected");
             accType.selectByVisibleText("Individual Checking (Standard Checking)");
+            setImplicitWait(driver, 10);
             driver.findElement(locators.WithdrwaAmt()).sendKeys(withdrawAmount);
             log.info("Amount has been sent");
             driver.findElement(By.xpath(locators.submitAcc)).click();
