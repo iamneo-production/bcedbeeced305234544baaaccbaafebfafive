@@ -48,25 +48,24 @@ public class homepage  {
     base64 screenshotHandler = new base64();
     ExtentReports reporter = Reporter.generateExtentReport();
     excelReadFile file = new excelReadFile();
+    ExtentTest test = Reporter.createTest("TC_001 - Login Test");
 
-    // @BeforeMethod
-    // public void loadData() {
-    //     try {
-    //         testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
-    //     } catch (IOException e) {
-    //         // Handle the exception
-    //         e.printStackTrace();
-    //     }
-    // }
+
+
 
     public void Valid_Login_TC(WebDriver driver)throws IOException {
     
             Map<String, String> testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
             String username = testData.get("username");
+            test.info("password sent");
+            test.info("password sent");
+            test.info("password sent");
+            test.info("password sent");
+            test.info("password sent");
             String password = testData.get("password");
 
             driver.findElement(Locators1.username).sendKeys(username);
-            test
+        
             driver.findElement(Locators1.password).sendKeys(password);
             driver.findElement(Locators1.submit).click();
            

@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-19T16:29:02 UTC" name="Surefire suite" finished-at="2023-09-19T16:29:35 UTC" duration-ms="33064">
+  <suite started-at="2023-09-19T16:40:50 UTC" name="Surefire suite" finished-at="2023-09-19T16:40:59 UTC" duration-ms="9646">
     <groups>
     </groups>
-    <test started-at="2023-09-19T16:29:02 UTC" name="Surefire test" finished-at="2023-09-19T16:29:35 UTC" duration-ms="33064">
+    <test started-at="2023-09-19T16:40:50 UTC" name="Surefire test" finished-at="2023-09-19T16:40:59 UTC" duration-ms="9646">
       <class name="runner.Testcase1">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:runner.Testcase1@1c5920df]" started-at="2023-09-19T16:29:15 UTC" name="beforeMethod" finished-at="2023-09-19T16:29:17 UTC" duration-ms="2255" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:runner.Testcase1@644baf4a]" started-at="2023-09-19T16:40:50 UTC" name="beforeMethod" finished-at="2023-09-19T16:40:53 UTC" duration-ms="3226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_001()[pri:1, instance:runner.Testcase1@1c5920df]" started-at="2023-09-19T16:29:17 UTC" name="TC_001" finished-at="2023-09-19T16:29:23 UTC" duration-ms="5817" status="PASS">
+        <test-method signature="TC_001()[pri:1, instance:runner.Testcase1@644baf4a]" started-at="2023-09-19T16:40:53 UTC" name="TC_001" finished-at="2023-09-19T16:40:59 UTC" duration-ms="6043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:runner.Testcase1@1c5920df]" started-at="2023-09-19T16:29:23 UTC" name="afterMethod" finished-at="2023-09-19T16:29:23 UTC" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:runner.Testcase1@644baf4a]" started-at="2023-09-19T16:40:59 UTC" name="afterMethod" finished-at="2023-09-19T16:40:59 UTC" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- runner.Testcase1 -->
-      <class name="runner.Testcase2">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:runner.Testcase2@368247b9]" started-at="2023-09-19T16:29:02 UTC" name="beforeMethod" finished-at="2023-09-19T16:29:05 UTC" duration-ms="3281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_002()[pri:2, instance:runner.Testcase2@368247b9]" started-at="2023-09-19T16:29:05 UTC" name="TC_002" finished-at="2023-09-19T16:29:15 UTC" duration-ms="9113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_002 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:runner.Testcase2@368247b9]" started-at="2023-09-19T16:29:15 UTC" name="afterMethod" finished-at="2023-09-19T16:29:15 UTC" duration-ms="379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- runner.Testcase2 -->
-      <class name="runner.Testcase3">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:runner.Testcase3@17f9d882]" started-at="2023-09-19T16:29:23 UTC" name="beforeMethod" finished-at="2023-09-19T16:29:25 UTC" duration-ms="2336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_003()[pri:3, instance:runner.Testcase3@17f9d882]" started-at="2023-09-19T16:29:25 UTC" name="TC_003" finished-at="2023-09-19T16:29:35 UTC" duration-ms="9523" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_003 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:runner.Testcase3@17f9d882]" started-at="2023-09-19T16:29:35 UTC" name="afterMethod" finished-at="2023-09-19T16:29:35 UTC" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- runner.Testcase3 -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
