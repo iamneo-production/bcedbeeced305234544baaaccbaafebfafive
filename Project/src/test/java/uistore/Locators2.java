@@ -2,7 +2,7 @@ package uistore;
 
 import org.openqa.selenium.By;
 
-public class loctors2 {
+public class Locators2 {
     public static By depositLink = By.linkText("Deposit");
     public static By accType = By.id("selectedAccount");
     public static By amount = By.id("amount");

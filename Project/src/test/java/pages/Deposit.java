@@ -37,6 +37,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebDriver;
 import utils.base64;
 import utils.Screenshot;
+import uistore.Locators2;
 import uistore.locators;
 import utils.excelReadFile;
 import utils.Reporter;
@@ -61,9 +62,9 @@ public void Deposit_Amount(WebDriver driver)throws IOException {
             Select accType=new Select(driver.findElement(locators.accType));
             log.info("Account Type has been selected");
             accType.selectByVisibleText("Individual Checking (Standard Checking)");
-            driver.findElement(locators.amount).sendKeys(depositAmount);
+            driver.findElement(Locators2.amount).sendKeys(depositAmount);
             log.info("Amount has been sent");
-            driver.findElement(By.xpath(locators.submitAcc)).click();
+            driver.findElement(By.xpath(Locators2.submitAcc)).click();
 
         
     }

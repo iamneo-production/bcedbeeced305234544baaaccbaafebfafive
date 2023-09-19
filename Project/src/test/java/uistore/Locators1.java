@@ -2,7 +2,7 @@ package uistore;
 
 import org.openqa.selenium.By;
 
-public class locators {
+public class Locators1 {
     public static By username = By.name("username");
     public static By password = By.id("password");
     public static By submit = By.id("submit");
@@ -13,8 +13,5 @@ public class locators {
     // public static By Withdrawlink = By.linkText("Withdraw");
     public static By getWithdrawLinkLocator() {
         return By.xpath("//a[@id='withdraw-menu-item']");
-    }
-    public static By WithdrwaAmt() {
-        return By.xpath("//input[@id='amount']");
     }
 }
