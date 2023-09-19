@@ -70,7 +70,6 @@ public class Withdraw  {
             driver.findElement(locators.getWithdrawLinkLocator()).click();
             Select accType=new Select(driver.findElement(locators.accType));
             log.info("Account Type has been selected");
-            
             accType.selectByVisibleText("Individual Checking (Standard Checking)");
             driver.findElement(locators.WithdrwaAmt()).sendKeys(withdrawAmount);
             log.info("Amount has been sent");
