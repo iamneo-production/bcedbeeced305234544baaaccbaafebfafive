@@ -26,27 +26,8 @@ public class Testcase2 extends Base {
     ExtentReports reporter = Reporter.generateExtentReport();;
     homepage Homepage = new homepage();
     Deposit deposit = new Deposit();
-    Withdraw withdraw = new Withdraw(); 
+
     
-    // @Test(priority = 1)
-    // public void TC_001() throws IOException {
-    //     try {
-    //         ExtentTest test = reporter.createTest("Basic log", "Execution for Login Function");
-    //         driver.get(prop.getProperty("url"));
-    //         Homepage.Valid_Login_TC(driver);
-    //         test.log(Status.PASS, "login Test");
-
-    //     } 
-    //     catch (Exception ex) {
-    //         ex.printStackTrace();
-    //         Screenshot.getScreenShot(driver, "Login_test");
-    //         ExtentTest test = reporter.createTest("Login Test");
-    //         String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-    //         test.log(Status.FAIL, "Unable to Perform Login Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
-           
-    //     }
-    // }
-
      @Test(priority = 2)
     public void TC_002() throws IOException {
         try {
@@ -66,27 +47,6 @@ public class Testcase2 extends Base {
         }
     }
 
-
-    // @Test(priority = 3)
-    // public void TC_003() throws IOException {
-    //     try {
-    //         ExtentTest test = reporter.createTest("WithdrawTest ", "Execution for WithdrawTest");
-    //         driver.get(prop.getProperty("url"));
-    //         Homepage.Valid_Login_TC(driver);
-    //         withdraw.WithdrawTest(driver);
-
-    //         String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-    //         test.log(Status.PASS, "WithdrawTest", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
-
-    //     }catch (Exception ex) {
-    //         ex.printStackTrace();
-    //         Screenshot.getScreenShot(driver, "Withdraw test");
-    //         ExtentTest test = reporter.createTest("WithdrawTest");
-    //         String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-    //         test.log(Status.FAIL, "Unable to Perform WithdrawTest ", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
-           
-    //     }
-    // }
     
     
 

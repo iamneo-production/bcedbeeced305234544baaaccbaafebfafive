@@ -19,33 +19,39 @@ import utils.Base;
 import utils.EventHandler;
 import utils.Reporter;
 // import utils.Screenshot;
-public class Testcase1 extends Base {
+public class Testcase3 extends Base {
 
     java.util.logging.Logger log =  LoggerHandler.getLogger();
     base64 screenshotHandler = new base64();
     ExtentReports reporter = Reporter.generateExtentReport();;
     homepage Homepage = new homepage();
-    Deposit deposit = new Deposit();
     Withdraw withdraw = new Withdraw(); 
     
-    @Test(priority = 1)
-    public void TC_001() throws IOException {
+    
+
+
+    @Test(priority = 3)
+    public void TC_003() throws IOException {
         try {
-            ExtentTest test = reporter.createTest("Basic log", "Execution for Login Function");
+            ExtentTest test = reporter.createTest("WithdrawTest ", "Execution for WithdrawTest");
             driver.get(prop.getProperty("url"));
             Homepage.Valid_Login_TC(driver);
-            test.log(Status.PASS, "login Test");
+            withdraw.WithdrawTest(driver);
 
-        } 
-        catch (Exception ex) {
-            ex.printStackTrace();
-            Screenshot.getScreenShot(driver, "Login_test");
-            ExtentTest test = reporter.createTest("Login Test");
             String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-            test.log(Status.FAIL, "Unable to Perform Login Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+            test.log(Status.PASS, "WithdrawTest", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+
+        }catch (Exception ex) {
+            ex.printStackTrace();
+            Screenshot.getScreenShot(driver, "Withdraw test");
+            ExtentTest test = reporter.createTest("WithdrawTest");
+            String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
+            test.log(Status.FAIL, "Unable to Perform WithdrawTest ", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
            
         }
-    }    
+    }
+    
+    
 
 @BeforeMethod
 public void beforeMethod() throws MalformedURLException {

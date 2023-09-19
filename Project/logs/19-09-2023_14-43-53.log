@@ -1,8 +1,0 @@
-Sep 19, 2023 2:43:56 PM utils.Base openBrowser
-INFO: Browser Launched
-Sep 19, 2023 2:43:57 PM utils.Base openBrowser
-INFO: Browser Loaded the URL
-Sep 19, 2023 2:44:06 PM pages.Withdraw WithdrawTest
-INFO: Account Type has been selected
-Sep 19, 2023 2:44:07 PM runner.Testcase1 afterMethod
-INFO: Browser closed
