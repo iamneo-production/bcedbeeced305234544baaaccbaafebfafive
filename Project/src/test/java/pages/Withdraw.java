@@ -59,14 +59,10 @@ public class Withdraw  {
         }
     }
 
-public void setImplicitWait(WebDriver driver, int seconds) {
-    driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
-}
-
 
   public void WithdrawTest(WebDriver driver)throws IOException {
             Map<String, String> testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
-            String withdrawAmount = testData.get("withdrawAmount");
+            String withdrawAmount = testData.get("Wamt");
 
             Duration timeout = Duration.ofSeconds(10);
             WebDriverWait wait = new WebDriverWait(driver,timeout);
@@ -74,8 +70,8 @@ public void setImplicitWait(WebDriver driver, int seconds) {
             Select accType=new Select(driver.findElement(locators.accType));
             log.info("Account Type has been selected");
             accType.selectByVisibleText("Individual Checking (Standard Checking)");
-            setImplicitWait(driver, 10);
-            driver.findElement(locators.WithdrwaAmt()).sendKeys(withdrawAmount);
+            driver.findElement(locators.amount).sendKeys(withdrawAmount);
+
             log.info("Amount has been sent");
             driver.findElement(By.xpath(locators.submitAcc)).click();
 
