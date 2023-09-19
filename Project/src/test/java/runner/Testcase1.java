@@ -28,43 +28,43 @@ public class Testcase1 extends Base {
     Deposit deposit = new Deposit();
     Withdraw withdraw = new Withdraw(); 
     
-    // @Test(priority = 1)
-    // public void TC_001() throws IOException {
-    //     try {
-    //         ExtentTest test = reporter.createTest("Basic log", "Execution for Login Function");
-    //         driver.get(prop.getProperty("url"));
-    //         Homepage.Valid_Login_TC(driver);
-    //         test.log(Status.PASS, "login Test");
+    @Test(priority = 1)
+    public void TC_001() throws IOException {
+        try {
+            ExtentTest test = reporter.createTest("Basic log", "Execution for Login Function");
+            driver.get(prop.getProperty("url"));
+            Homepage.Valid_Login_TC(driver);
+            test.log(Status.PASS, "login Test");
 
-    //     } 
-    //     catch (Exception ex) {
-    //         ex.printStackTrace();
-    //         Screenshot.getScreenShot(driver, "Login_test");
-    //         ExtentTest test = reporter.createTest("Login Test");
-    //         String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-    //         test.log(Status.FAIL, "Unable to Perform Login Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+        } 
+        catch (Exception ex) {
+            ex.printStackTrace();
+            Screenshot.getScreenShot(driver, "Login_test");
+            ExtentTest test = reporter.createTest("Login Test");
+            String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
+            test.log(Status.FAIL, "Unable to Perform Login Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
            
-    //     }
-    // }
+        }
+    }
 
-    //  @Test(priority = 2)
-    // public void TC_002() throws IOException {
-    //     try {
-    //         ExtentTest test = reporter.createTest("Register Test", "Execution for Register Function");
-    //         driver.get(prop.getProperty("url"));
-    //         Homepage.Valid_Login_TC(driver);
-    //         deposit.Deposit_Amount(driver);
-    //         test.log(Status.PASS, "Register Test");
-    //     } 
-    //     catch (Exception ex) {
-    //         ex.printStackTrace();
-    //         Screenshot.getScreenShot(driver, "Register_test");
-    //         ExtentTest test = reporter.createTest("Register Test");
-    //         String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-    //         test.log(Status.FAIL, "Unable to Perform Register Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+     @Test(priority = 2)
+    public void TC_002() throws IOException {
+        try {
+            ExtentTest test = reporter.createTest("Register Test", "Execution for Register Function");
+            driver.get(prop.getProperty("url"));
+            Homepage.Valid_Login_TC(driver);
+            deposit.Deposit_Amount(driver);
+            test.log(Status.PASS, "Register Test");
+        } 
+        catch (Exception ex) {
+            ex.printStackTrace();
+            Screenshot.getScreenShot(driver, "Register_test");
+            ExtentTest test = reporter.createTest("Register Test");
+            String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
+            test.log(Status.FAIL, "Unable to Perform Register Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
            
-    //     }
-    // }
+        }
+    }
 
 
 

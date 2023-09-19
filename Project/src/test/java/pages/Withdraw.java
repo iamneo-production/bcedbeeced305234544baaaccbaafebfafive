@@ -37,7 +37,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebDriver;
 import utils.base64;
 import utils.Screenshot;
-import uistore.locators;
+import uistore.Locators3;
 import utils.excelReadFile;
 import utils.Reporter;
 public class Withdraw  {
@@ -66,14 +66,14 @@ public class Withdraw  {
 
             Duration timeout = Duration.ofSeconds(10);
             WebDriverWait wait = new WebDriverWait(driver,timeout);
-            driver.findElement(locators.getWithdrawLinkLocator()).click();
-            Select accType=new Select(driver.findElement(locators.accType));
+            driver.findElement(Locators3.getWithdrawLinkLocator()).click();
+            Select accType=new Select(driver.findElement(Locators3.accType));
             log.info("Account Type has been selected");
             accType.selectByVisibleText("Individual Checking (Standard Checking)");
-            driver.findElement(locators.amount).sendKeys(withdrawAmount);
+            driver.findElement(Locators3.amount).sendKeys(withdrawAmount);
 
             log.info("Amount has been sent");
-            driver.findElement(By.xpath(locators.submitAcc)).click();
+            driver.findElement(By.xpath(Locators3.submitAcc)).click();
 
         
     }

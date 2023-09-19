@@ -38,7 +38,6 @@ import org.openqa.selenium.WebDriver;
 import utils.base64;
 import utils.Screenshot;
 import uistore.Locators2;
-import uistore.locators;
 import utils.excelReadFile;
 import utils.Reporter;
 public class Deposit  {
@@ -57,9 +56,9 @@ public void Deposit_Amount(WebDriver driver)throws IOException {
 
             Duration timeout = Duration.ofSeconds(10);
             WebDriverWait wait = new WebDriverWait(driver,timeout);
-            WebElement depositLink = wait.until(ExpectedConditions.elementToBeClickable(locators.depositLink));
+            WebElement depositLink = wait.until(ExpectedConditions.elementToBeClickable(Locators2.depositLink));
             depositLink.click();
-            Select accType=new Select(driver.findElement(locators.accType));
+            Select accType=new Select(driver.findElement(Locators2.accType));
             log.info("Account Type has been selected");
             accType.selectByVisibleText("Individual Checking (Standard Checking)");
             driver.findElement(Locators2.amount).sendKeys(depositAmount);

@@ -3,10 +3,12 @@ runner/Testcase1.class
 utils/EventHandler.class
 utils/Base.class
 pages/Deposit.class
-uistore/locators.class
+uistore/Locators3.class
 utils/Screenshot.class
 utils/LoggerHandler.class
+uistore/Locators2.class
 pages/homepage.class
+uistore/Locators1.class
 pages/Withdraw.class
 utils/excelReadFile.class
 utils/Reporter.class
