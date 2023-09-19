@@ -67,11 +67,6 @@ public class Testcase1 extends Base {
     // }
 
 
-
-
-
-
-
     @Test(priority = 3)
     public void TC_003() throws IOException {
         try {
@@ -103,7 +98,7 @@ public void beforeMethod() throws MalformedURLException {
 
     @AfterMethod
     public void afterMethod() {
-        // driver.quit();
+        driver.quit();
         reporter.flush();
         log.info("Browser closed");
         LoggerHandler.closeHandler();
