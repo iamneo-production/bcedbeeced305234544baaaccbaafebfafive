@@ -63,6 +63,7 @@ public void Deposit_Amount(WebDriver driver)throws IOException {
             
             Map<String, String> testData = excelReadFile.readTestData("/home/coder/project/workspace/Project/testdata/Testdata.xlsx", "Sheet1");
             String depositAmount = testData.get("depositAmount");
+            
             Duration timeout = Duration.ofSeconds(10);
             WebDriverWait wait = new WebDriverWait(driver,timeout);
             WebElement depositLink = wait.until(ExpectedConditions.elementToBeClickable(locators.depositLink));
