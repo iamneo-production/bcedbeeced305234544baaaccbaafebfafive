@@ -30,7 +30,7 @@ public class Base
 	public java.util.logging.Logger log =LoggerHandler.log;
 	public Base() 
 	{
-		String filepath=System.getProperty("user.dir")+"/src/test/java/resources/browser.properties";
+		String filepath=System.getProperty("user.dir")+"/config/browser.properties";
 		try
 		{
 			FileInputStream file=new FileInputStream(filepath);
