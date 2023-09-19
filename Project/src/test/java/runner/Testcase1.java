@@ -31,7 +31,7 @@ public class Testcase1 extends Base {
     @Test(priority = 1)
     public void TC_001() throws IOException {
         try {
-            ExtentTest test = reporter.createTest("Basic log", "Execution for Login Function");
+            ExtentTest test = reporter.createTest("Login Test", "Execution for Login Function");
             driver.get(prop.getProperty("url"));
             Homepage.Valid_Login_TC(driver);
             test.log(Status.PASS, "login Test");
@@ -39,8 +39,8 @@ public class Testcase1 extends Base {
         } 
         catch (Exception ex) {
             ex.printStackTrace();
-            Screenshot.getScreenShot(driver, "Login_test");
-            ExtentTest test = reporter.createTest("Login Test");
+            Screenshot.getScreenShot(driver, "Login_test fail");
+            ExtentTest test = reporter.createTest("Login Test fail");
             String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
             test.log(Status.FAIL, "Unable to Perform Login Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
            

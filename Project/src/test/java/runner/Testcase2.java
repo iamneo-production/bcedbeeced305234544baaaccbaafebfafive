@@ -31,18 +31,18 @@ public class Testcase2 extends Base {
      @Test(priority = 2)
     public void TC_002() throws IOException {
         try {
-            ExtentTest test = reporter.createTest("Register Test", "Execution for Register Function");
+            ExtentTest test = reporter.createTest("Deposit_Amount Test", "Execution for Deposit_Amount Function");
             driver.get(prop.getProperty("url"));
             Homepage.Valid_Login_TC(driver);
             deposit.Deposit_Amount(driver);
-            test.log(Status.PASS, "Register Test");
+            test.log(Status.PASS, "Deposit_Amount Test");
         } 
         catch (Exception ex) {
             ex.printStackTrace();
-            Screenshot.getScreenShot(driver, "Register_test");
-            ExtentTest test = reporter.createTest("Register Test");
+            Screenshot.getScreenShot(driver, "Deposit_Amount Test");
+            ExtentTest test = reporter.createTest("Deposit_Amount Test fail");
             String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-            test.log(Status.FAIL, "Unable to Perform Register Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+            test.log(Status.FAIL, "Unable to Perform Deposit_Amount Test", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
            
         }
     }

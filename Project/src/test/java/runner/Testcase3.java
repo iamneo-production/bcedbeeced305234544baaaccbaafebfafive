@@ -43,10 +43,10 @@ public class Testcase3 extends Base {
 
         }catch (Exception ex) {
             ex.printStackTrace();
-            Screenshot.getScreenShot(driver, "Withdraw test");
-            ExtentTest test = reporter.createTest("WithdrawTest");
+            Screenshot.getScreenShot(driver, "Withdraw test fail");
+            ExtentTest test = reporter.createTest("WithdrawTest fail");
             String base64Screenshot = screenshotHandler.captureScreenshotAsBase64(driver);
-            test.log(Status.FAIL, "Unable to Perform WithdrawTest ", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+            test.log(Status.FAIL, "Unable to Perform WithdrawTest fail", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
            
         }
     }
